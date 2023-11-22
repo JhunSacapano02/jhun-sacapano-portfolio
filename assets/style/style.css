@@ -1,0 +1,187 @@
+
+
+body, *{
+    padding:0px;
+    margin:0px;
+    overflow-x: hidden;
+}
+
+.container{
+    /* maximize width */
+    /* max-width:  1200px; */
+    margin: 0px 120px 0px 120px;
+
+}
+
+h1 {
+	font-family: 'Playfair Display', sans-serif;
+	font-weight: 700;
+    font-size: 64px;
+	color: #25282B;
+}
+
+p {
+	font-family: 'Nunito', sans-serif;
+}
+
+
+
+.section1{
+    padding: 12px 0px 12px 0px;
+
+    display: flex;
+    justify-content: space-between;   
+    position: relative;
+    z-index: 9999; 
+}
+
+.nav{
+    display: flex;
+}
+
+.titlename{
+    
+    font-family: 'Nunito';
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nav > li {
+    margin-left: 48px;
+    font-family: 'Nunito';
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.section2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -54px;
+    margin-right: 0px;
+}
+
+/* for landing page only */
+.divnew {
+    max-width: 486px;
+    padding: auto;
+    margin-right: 114px;
+    
+}
+
+
+.divnew > h5 {
+    margin-top: 54px;
+    font-family: 'Nunito';
+    font-weight: 700;
+    font-size: 20px;
+    color: #FDC435;
+}
+
+.divnew > h1 {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 62px;
+    color: #25282B;
+    margin-bottom: 32px;
+}
+
+
+.divnew > p {
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: 24px;
+    color: #828282;
+    margin-bottom: 12px;
+}
+
+#profilebuttons{
+    padding: 20px 20px 0px 0px;
+    display: flex;
+    justify-content: space-start;
+}
+
+
+#projectbutton {
+    margin-right: 12px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FDC435;
+    color: #25282B;
+    font-weight: bold;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  #projectbutton:hover {
+    transform: translateY(-2px);
+    cursor: pointer;
+  }
+  #linkedinbutton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: #25282B;
+    border: 2px solid #25282B;
+    font-weight: bold;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  #linkedinbutton:hover {
+    transform: translateY(-2px);
+    cursor: pointer;
+  }
+
+  /* .profileimage{
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    height: 80%;
+  } */
+
+  .svg_container{
+    position: relative;
+  }
+
+
+
+  .profileimage{
+    width: 90%;
+    height: 100%;
+    -webkit-mask-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+  }
+
+  .maskimage{
+    -webkit-mask-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzIwIiBoZWlnaHQ9IjYyOSIgdmlld0JveD0iMCAwIDcyMCA2MjkiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNNDI2Ljc1NSAtMjQ3LjMzOUM1MjYuMDEgLTI0Mi42MjMgNjMwLjQxNiAtMjA1LjczNyA2OTEuMDE5IC0xMjguOTQyQzc0Ny4wNTMgLTU3LjkzNTkgNzA5LjQwMyA0Mi44ODg0IDcyNS40MDggMTMxLjExNEM3MzguMjc2IDIwMi4wNDQgNzg2LjMwMiAyNjQuOTYxIDc3NS40MDQgMzM2LjIwNEM3NjMuMzMyIDQxNS4xMzIgNzI0Ljg0MiA0OTAuNDUzIDY2Mi41MzIgNTQyLjE4NkM1OTcuMjcxIDU5Ni4zNjggNTEwLjgzNSA2NDEuODk1IDQyNi43NTUgNjI1LjY3MUMzNDUuMjYxIDYwOS45NDcgMzE5Ljg3NSA1MDYuODIzIDI1MC4yNDkgNDYyLjYzNUMxNzQuMDY5IDQxNC4yODcgNDEuMjUyOCA0NDAuNzg1IDYuNDMwOTIgMzU4LjkxM0MtMjcuNjgxNiAyNzguNzEgODMuOTU2OCAyMDguMjU3IDEwNi4zMDggMTI0LjIwOUMxMzEuMDY3IDMxLjEwODQgNzkuNjA4NCAtODEuMzY2NyAxNDMuMDk0IC0xNTQuOTc2QzIwOC44NjUgLTIzMS4yMzYgMzI0LjY4OSAtMjUyLjE4OSA0MjYuNzU1IC0yNDcuMzM5WiIgZmlsbD0iI0ZEQzQzNSIvPgo8L3N2Zz4K)
+  }
+
+  .svgimage{
+    z-index: 1;
+  }
+  
+
+  
+  
+ 
+  
+
+/* .landingpageblub{
+    position:absolute;
+    top: 0%;
+    right: 0%;
+} */
+
+
+
+
+
+#topstyle{
+    font-size: 20;
+    color: #FDC435;
+}
+
